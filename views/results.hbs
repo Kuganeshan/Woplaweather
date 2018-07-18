@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
-<title>Weather App</title>
-{{> stylerefs}}
+<title>Wopla Weather Forecast</title>
+<!-- {{> stylerefs}} -->
+<style>
+body {
+    background-color: blue;
+}
+</style>
 <body>
 
 <!-- Navbar -->
@@ -21,9 +26,9 @@
   <div class="w3-content">
     <div class="w3-twothird">
       <h5>
-        <P>Address: {{address}}         </p>
-          <p>Summary: {{summary}}       </p>
-          <p>Temperature: {{temperature}}       </p>
+        <P><b>Address: {{address}}       </b></p>
+          <p><b>Summary: {{summary}}     </b></p>
+          <p><b>Temperature: {{temperature}}      </b></p>
       </h5>
     </div>
 
