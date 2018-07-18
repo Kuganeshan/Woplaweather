@@ -12,7 +12,7 @@ const saveData = (newdata) => {
       reject('Unable to connect to MongoDB');
     }
     console.log('Connected to MongoDB');
-    const db = client.db('weather_app');
+    const db = client.db('woplaweather');
 
     db.collection('weatherCollection').insertOne(newdata,(err, result) => {
        if (err) {
@@ -34,7 +34,7 @@ const getAllData = () => {
       reject('Unable to connect to MongoDB');
     }
     console.log('Connected to MongoDB');
-    const db = client.db('weather_app');
+    const db = client.db('woplaweather');
 
     db.collection('weatherCollection').find().toArray().then((docs) => {
     resolve(docs);
@@ -54,7 +54,7 @@ const deleteAll = () => {
       reject('Unableto connect to MongoDB');
     }
     console.log('Connected to MongoDB');
-    const db = client.db('weather_app');
+    const db = client.db('woplaweather');
 
     db.collection('weatherCollection').remove({}).then((result) => {
     resolve(result);
