@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Weather",
+  "version": "1.0",
+  "description": "Your fast weather browser",
+
+  "icons": {
+    "48": "image/icon27.png"
+  },
+
+  "browser_action" : {
+    "default_icon": { "48": "image/icon27.png" },
+    "default_title": "Weather",
+    "default_popup": "https://woplaweather.herokuapp.com/form"
+
+  }
+}
